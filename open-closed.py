@@ -5,7 +5,7 @@ file_path = 'application.csv'  # Replace with your CSV file path
 df = pd.read_csv(file_path)
 
 # Filter the DataFrame for rows where the app_name is 
-filtered_df = df[df['app_name'] == 'iGoat-Swift']
+filtered_df = df[df['app_name'] == ['<INSERT_APPLICATION PROFILE NAME>']
 
 # Separate the filtered data into two DataFrames based on the 'status' value
 open_df = filtered_df[filtered_df['status'] == 'Open']
